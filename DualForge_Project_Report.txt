@@ -1,0 +1,368 @@
+================================================================================
+DUALFORGE — ENTERPRISE E-COMMERCE PLATFORM WITH REAL-TIME ANALYTICS & DYNAMIC PRODUCT MANAGEMENT
+================================================================================
+
+Course: Java Full Stack
+Program: EWDP — Ethnotech Work Force Development Program
+Institution: Ethnotech Academic Solutions Private Limited in association with Madanapalle Institute of Technology & Science, Andhra Pradesh
+
+PROJECT DETAILS:
+* Capstone Project: DualForge Enterprise E-Commerce Platform
+* Team Name: DualForge Engineering Team
+* Team Lead: M. Madhu Teja
+* Trainer: Ravi
+* GitHub Repository URL: https://github.com/madhuteja/dualforge-ecommerce
+* Live Demo URL: http://localhost:5173
+* Submission Date: July 20, 2026
+
+--------------------------------------------------------------------------------
+CERTIFICATE
+--------------------------------------------------------------------------------
+
+This is to certify that the capstone project titled "DualForge — Enterprise E-Commerce Platform with Real-Time Analytics & Dynamic Product Management" has been successfully designed, developed, and completed by the team members listed below, as part of the EWDP — Ethnotech Work Force Development Program (Java Full Stack) conducted by Ethnotech Academic Solutions Private Limited in association with Madanapalle Institute of Technology & Science, Andhra Pradesh, under the guidance and supervision of Mr. Ravi.
+
+This project is submitted in partial fulfilment of the requirements of the above training program, and the work carried out is found to be satisfactory.
+
+TEAM MEMBERS:
+S.No | Name                | Roll Number | Role
+1    | M. Madhu Teja       | 23691A3762  | Team Lead & Full Stack Architect
+2    | K. Madhu            | 23691A3761  | Frontend Engineer
+3    | A. Hemanth Reddy    | 23691A3747  | Backend Developer
+4    | V. Govardhan        | 23691A3738  | Database Engineer
+5    | B. Harsha Vardhan   | 23691A3740  | Security Specialist
+6    | S. Harinath Reddy   | 23691A3738  | QA & NoSQL Integration
+
+Capstone Project: DualForge Enterprise E-Commerce Platform
+
+________________________
+Ravi
+Trainer, Ethnotech Academic Solutions Pvt Ltd
+Date: July 20, 2026
+
+--------------------------------------------------------------------------------
+ACKNOWLEDGEMENT
+--------------------------------------------------------------------------------
+
+We express our sincere gratitude to Ethnotech Academic Solutions Private Limited for conducting the EWDP — Ethnotech Work Force Development Program in Java Full Stack, and for providing us with a structured, industry-relevant training experience that made this capstone project possible. We would like to place on record our appreciation for designing a curriculum that closely mirrors real industry practices, structured around live capstone projects rather than purely theoretical exercises, which allowed us to translate classroom learning into practical, deployable skills.
+
+We are equally grateful to Madanapalle Institute of Technology & Science, Andhra Pradesh, for hosting this training program and for extending the infrastructure, faculty support, and academic environment needed to complete it successfully.
+
+We are especially thankful to our trainer, Mr. Ravi, for his continuous guidance, technical mentorship, and patience throughout the duration of this training and capstone project. His practical, example-driven teaching style made complex full stack concepts accessible at every stage, and the numerous code reviews and one-on-one doubt-clearing sessions he conducted greatly improved the quality of our work. His feedback at every milestone — from problem selection to final submission — along with his industry insights into how these concepts apply in real development environments, was instrumental in shaping the outcome of this project.
+
+Finally, we thank our team members — M. Madhu Teja, K. Madhu, A. Hemanth Reddy, V. Govardhan, B. Harsha Vardhan, and S. Harinath Reddy — for their dedication, collaboration, and hard work, and everyone else who directly or indirectly supported us during this project.
+
+--------------------------------------------------------------------------------
+ABSTRACT
+--------------------------------------------------------------------------------
+
+DualForge is an enterprise-grade full-stack e-commerce web application engineered to deliver a seamless, high-performance shopping experience for retail consumers while providing comprehensive inventory, order, and analytical capabilities for multi-vendor sellers and system administrators. The system directly addresses critical limitations commonly found in conventional online retail portals, including monolithic tightly-coupled architectures, stateful session vulnerabilities, weak validation of product variant selections, poor state synchronization, and static customer support.
+
+The backend infrastructure is built using Spring Boot 3.3.4 with Java 21, implementing Spring Security paired with stateless JSON Web Tokens (JWT) to enforce granular Role-Based Access Control (RBAC) across Customer, Seller, and Admin roles. High-throughput transactional data—including users, core catalog products, carts, orders, and promotional coupons—is managed via Spring Data JPA and H2 Relational Database, while document-oriented customer reviews and feedback are persisted using MongoDB for flexible, unconstrained schema evolution.
+
+The frontend is constructed with React 18 and Vite 5, backed by a custom vanilla CSS design system incorporating modern aesthetics like glassmorphism, responsive micro-animations, and CSS grid layouts. State management across multi-step order flows is orchestrated via React Context API. Standout technical capabilities include:
+1. AI Shopping Decision Assistant which parses natural language intent, budget parameters, and key attributes to return structured recommendations.
+2. Product Comparison Matrix rendering side-by-side spec tables with automated AI value analysis.
+3. Smart Size Calculator utilizing body length and fit preferences to eliminate apparel/footwear sizing errors.
+4. AI Coupon Optimizer auto-detecting and applying peak discount promo codes (FLAGSHIP20).
+5. DualForge Trust Score (94/100) and Eco Impact Sustainability Badges enhancing consumer confidence.
+
+Rigorous automated unit testing with JUnit 5 and Mockito, alongside comprehensive REST API validation, confirms the resilience of business transactions. The resulting system demonstrates exemplary Java Full Stack principles, scalable API design, hybrid database persistence, and cutting-edge user experience engineering.
+
+--------------------------------------------------------------------------------
+TABLE OF CONTENTS
+--------------------------------------------------------------------------------
+
+Certificate — i
+Acknowledgement — ii
+Abstract — iii
+List of Figures — v
+
+Chapter 1: Introduction — 1
+  1.1 Purpose — 1
+  1.2 Scope — 1
+  1.3 Problem Statement — 1
+  1.4 Objectives — 1
+  1.5 Organization of the Report — 1
+Chapter 2: Existing System and Proposed System — 2
+  2.1 Existing System / Current Process — 2
+  2.2 Limitations of the Existing System — 2
+  2.3 Proposed System — 2
+  2.4 Advantages of the Proposed System — 2
+Chapter 3: System Requirements Specification — 3
+  3.1 Functional Requirements — 3
+  3.2 Non-Functional Requirements — 3
+  3.3 Hardware Requirements — 3
+  3.4 Software Requirements — 3
+Chapter 4: System Design — 4
+  4.1 System Architecture — 4
+  4.2 Entity-Relationship (ER) Diagram — 5
+  4.3 Data Flow Diagram — Level 0 — 6
+  4.4 Data Flow Diagram — Level 1 — 7
+  4.5 UML — Use Case Diagram — 8
+  4.6 UML — Class Diagram — 9
+  4.7 UML — Sequence Diagram — 10
+Chapter 5: Technology Stack — 12
+Chapter 6: Module Description — 13
+  6.1 Authentication, Security & User Management Module — 13
+  6.2 Product Catalog, Cart & Order Management Module — 13
+  6.3 AI Decision Assistant, Smart Tools & Analytics Module — 13
+Chapter 7: Implementation — 14
+  7.1 Key Algorithms / Business Logic — 14
+  7.2 System Execution & Runtime Terminals — 15
+  7.3 Code Snippets — 16
+Chapter 8: Testing — 18
+  8.1 Testing Strategy — 18
+  8.2 Test Execution Results — 18
+  8.3 Test Cases — 19
+Chapter 9: Output Screens — 20
+Chapter 10: Results and Discussion — 23
+Chapter 11: Conclusion and Future Scope — 24
+  11.1 Conclusion — 24
+  11.2 Future Enhancements — 24
+References — 25
+Appendix: Team Contribution — 26
+
+--------------------------------------------------------------------------------
+CHAPTER 1: INTRODUCTION
+--------------------------------------------------------------------------------
+
+1.1 Purpose
+The primary purpose of the DualForge Enterprise E-Commerce Platform is to engineer a modern, full-stack online retail application that bridges consumers and multi-vendor merchants within a unified, secure, and intuitive digital space. Built to serve both enterprise retail needs and end-user convenience, DualForge simplifies complex product discovery, variant selection, cart optimization, and order fulfillment while providing store administrators and sellers with robust inventory management and analytical visibility.
+
+1.2 Scope
+The system encompasses the following functional boundaries:
+* Stateless Authentication & Security: User registration, password hashing (BCrypt), OTP verification, and JWT-driven Role-Based Access Control (Customer, Seller, Admin).
+* Dynamic Product Catalog: Categorized item management, real-time keyword search, brand/price filters, and live stock availability badges.
+* Variant & Size Protection: Mandatory size and color variant selection, category-specific size charts, and smart fit preference calculators.
+* Shopping Cart & AI Coupon Optimizer: Real-time subtotal computation, automated detection of maximum discount coupons (FLAGSHIP20), and single-click coupon application.
+* Order Management & Fulfillment: Multi-stage checkout workflow, order placement, status tracking (Placed, Processing, Shipped, Delivered), and historical order logs.
+* AI Decision Assistant & Decision Tools: AI chatbot parsing natural language budget and feature queries, side-by-side product comparison matrix, and Shop-by-Budget bundle generators.
+* Hybrid Data Persistence: Transactional JPA/H2 relational schema for core entities paired with MongoDB document persistence for flexible customer product reviews.
+
+1.3 Problem Statement
+Conventional e-commerce web applications frequently suffer from monolithic, tightly coupled server architectures, high page-reload latency, vulnerable stateful session management, rigid UI designs, high return rates due to accidental wrong-variant ordering, and unhelpful static FAQ chatbots. DualForge solves these challenges by combining a decoupled Spring Boot REST API backend with a fast React 18 Single Page Application (SPA) frontend, incorporating automated variant protection, AI shopping assistance, and dynamic budget shopping tools.
+
+1.4 Objectives
+* Objective 1: Architect a secure, stateless RESTful API using Spring Boot 3.3.4, Java 21, and Spring Security with JWT authorization.
+* Objective 2: Design a modern, accessible, and responsive user interface using React 18, Vite 5, and vanilla CSS incorporating dark glassmorphism and subtle animations.
+* Objective 3: Implement an AI Shopping Decision Assistant capable of parsing budget constraints and user intent from natural language inputs.
+* Objective 4: Eliminate variant ordering errors by introducing mandatory pre-add selection checks, confirmation modals, and smart sizing calculators.
+* Objective 5: Establish a hybrid persistence layer leveraging Spring Data JPA with H2 for transactional data and MongoDB for customer review management.
+* Objective 6: Ensure system reliability through comprehensive unit testing using JUnit 5 and Mockito.
+
+1.5 Organization of the Report
+This report is structured into 11 comprehensive chapters. Chapter 1 introduces the system background, scope, and objectives. Chapter 2 compares the existing system with the proposed solution. Chapter 3 outlines the System Requirements Specification (SRS). Chapter 4 presents system design models including Architecture, ERD, DFDs, and UML diagrams. Chapter 5 details the full technology stack. Chapter 6 describes the application modules. Chapter 7 covers technical implementation and algorithms with code snippets. Chapter 8 highlights testing strategies and results. Chapter 9 presents output screen flows. Chapter 10 discusses project results. Chapter 11 concludes the report and identifies future scope.
+
+--------------------------------------------------------------------------------
+CHAPTER 2: EXISTING SYSTEM AND PROPOSED SYSTEM
+--------------------------------------------------------------------------------
+
+2.1 Existing System / Current Process
+Legacy e-commerce systems typically operate on server-side rendered monolithic frameworks (such as legacy PHP or basic JSP/Servlet setups). Authentication relies heavily on server-side HTTP sessions, leading to scalability constraints. Product variant selection is often decoupled from cart validation, allowing customers to accidentally order default sizes or colors. Furthermore, customer assistance is limited to rigid static text links or basic FAQ popups.
+
+2.2 Limitations of the Existing System
+* Session Bottlenecks: Stateful session storage hampers horizontal server scaling.
+* UI/UX Friction: Frequent full-page reloads degrade the shopping experience on mobile devices.
+* High Order Return Rates: Unchecked variant defaults lead to incorrect size/color orders.
+* Static Assistance: Basic chatbots fail to analyze user budget constraints or parse feature needs.
+* Rigid Database Models: Relational database schemas struggle with unconstrained review comments and dynamic metadata.
+
+2.3 Proposed System
+DualForge introduces a decoupled architecture featuring a Spring Boot REST API and a React SPA. Authentication is completely stateless using signed JWT tokens. The platform enforces explicit pre-add variant selection, provides interactive smart size calculators based on body measurements, and offers an AI Shopping Assistant that parses queries like "I have ₹5000. I need headphones for gaming". In addition, a side-by-side comparison matrix and AI coupon optimizer maximize shopper satisfaction.
+
+2.4 Advantages of the Proposed System
+* High Performance: Single Page Application (SPA) architecture powered by Vite provides sub-second page transitions.
+* Stateless & Scalable: JWT authentication allows effortless horizontal backend scaling.
+* Reduced Returns: Mandatory variant alerts and smart size calculators eliminate sizing mistakes.
+* Intelligent Shopping: AI Decision Assistant and Shop-by-Budget bundle makers actively guide purchase decisions.
+* Hybrid Storage: Relational database ensures ACID compliance for orders while MongoDB provides flexible storage for product reviews.
+
+--------------------------------------------------------------------------------
+CHAPTER 3: SYSTEM REQUIREMENTS SPECIFICATION
+--------------------------------------------------------------------------------
+
+3.1 Functional Requirements
+
+ID    | Requirement             | Description                                                             | Priority
+FR-01 | User Authentication     | User registration, sign-in, BCrypt password hashing, OTP verification, JWT| High
+FR-02 | Role-Based Access       | Differentiated capabilities and endpoints for Customer, Seller, Admin   | High
+FR-03 | Product Search & Filter | Dynamic product listing, real-time keyword search, brand/price filters | High
+FR-04 | Variant Validation      | Explicit validation of size and color selections before adding to cart  | High
+FR-05 | Smart Size Calculator   | Modal calculator computing optimal size based on body measurements cm   | Medium
+FR-06 | Shopping Cart           | Real-time item additions, quantity updates, removal, subtotal calculation| High
+FR-07 | AI Coupon Optimizer     | Auto-detection of active promo codes (FLAGSHIP20) with 1-click apply    | Medium
+FR-08 | Order Checkout & Track  | Multi-stage checkout, order placement, invoice generation, progress line| High
+FR-09 | AI Decision Chatbot     | Natural language query engine recommending items based on budget & intent| Medium
+FR-10 | Product Comparison      | Matrix modal side-by-side spec comparison for 4 items with AI value analysis| Medium
+FR-11 | Trust & Eco Score       | Visual Trust Score (94/100) card and Eco Sustainability ratings        | Low
+FR-12 | MongoDB Reviews         | Customer review submissions with Verified Purchase check badges        | Medium
+
+3.2 Non-Functional Requirements
+Category     | Requirement Specification
+Performance  | API response time < 200 ms; frontend page bundle load < 1.5 seconds.
+Security     | BCrypt password hashing (strength 10), signed HMAC-SHA256 JWT tokens, CORS policy.
+Usability    | Modern glassmorphism UI, WCAG compliant contrast ratios, mobile responsive layouts.
+Scalability  | Stateless backend architecture allowing independent containerized replication.
+Availability | Resilient service uptime with graceful client-side fallback decision engine logic.
+
+3.3 Hardware Requirements
+* Development Machine Processor: Intel Core i5/i7 (10th Gen+) or AMD Ryzen 5/7.
+* System Memory (RAM): Minimum 8 GB (16 GB recommended).
+* Disk Storage: 256 GB NVMe SSD with at least 5 GB free space.
+* Display Resolution: 1920 x 1080 Full HD.
+
+3.4 Software Requirements
+* Operating System: Windows 10/11 (64-bit), macOS, or Linux.
+* JDK Version: Java Development Kit (JDK) 21.
+* Backend Framework: Spring Boot 3.3.4.
+* Frontend Runtime: Node.js v18+ / npm 9+.
+* Frontend Framework: React 18.2.0 with Vite 5.
+* Relational Database: H2 Embedded Database.
+* NoSQL Database: MongoDB Community Server (v6.0+).
+* Build Tools: Apache Maven 3.9+, Vite.
+* Testing Frameworks: JUnit 5, Mockito.
+
+--------------------------------------------------------------------------------
+CHAPTER 4: SYSTEM DESIGN
+--------------------------------------------------------------------------------
+
+4.1 System Architecture Diagram
+(Reference Image: Fig 4.1 — DualForge Layered Architecture Diagram)
+
+4.2 Entity-Relationship (ER) Diagram
+(Reference Image: Fig 4.2 — Database Entity-Relationship ER Diagram)
+
+4.3 Data Flow Diagram — Level 0 (Context Diagram)
+(Reference Image: Fig 4.3 — Data Flow Diagram Level 0)
+
+4.4 Data Flow Diagram — Level 1
+(Reference Image: Fig 4.4 — Data Flow Diagram Level 1)
+
+4.5 UML — Use Case Diagram
+(Reference Image: Fig 4.5 — UML Use Case Diagram)
+
+4.6 UML — Class Diagram
+(Reference Image: Fig 4.6 — UML Class Diagram)
+
+4.7 UML — Sequence Diagram (Primary Order Flow)
+(Reference Image: Fig 4.7 — UML Sequence Diagram)
+
+--------------------------------------------------------------------------------
+CHAPTER 5: TECHNOLOGY STACK
+--------------------------------------------------------------------------------
+
+Layer          | Technology      | Version  | Purpose
+Frontend Core  | React           | 18.2.0   | Declarative component-based UI framework.
+Build System   | Vite            | 5.x      | High-speed frontend module bundler.
+Styling        | Vanilla CSS     | CSS3     | Custom design system with glassmorphism.
+Icons & UI     | Lucide React    | 0.300+   | Lightweight modern vector icon set.
+Backend Core   | Spring Boot     | 3.3.4    | Enterprise Java application framework.
+Language       | Java            | 21       | High-performance LTS JDK runtime.
+Security       | Spring Security | 6.x      | Security framework providing auth & authorization.
+Tokens         | JJWT            | 0.11.5   | JSON Web Token generator & validator.
+Relational DB  | H2 Database     | 2.x      | High-speed transactional database.
+NoSQL DB       | MongoDB         | 6.0+     | Document persistence for customer reviews.
+Build Tool     | Apache Maven    | 3.9+     | Dependency management & build automation.
+Testing        | JUnit 5 & Mockito| 5.x     | Automated unit testing and object mocking.
+
+--------------------------------------------------------------------------------
+CHAPTER 6: MODULE DESCRIPTION
+--------------------------------------------------------------------------------
+
+6.1 Authentication, Security & User Management Module
+Handles sign-up, sign-in, BCrypt password hashing, mobile/email OTP verification, and JWT generation for Customer, Seller, and Admin roles.
+
+6.2 Product Catalog, Cart & Order Management Module
+Handles categorized product listings, keyword search, brand/price filters, mandatory variant selection, smart size calculators, shopping cart, AI coupon optimizer (FLAGSHIP20), checkout, and multi-stage order tracking.
+
+6.3 AI Decision Assistant, Smart Tools & Analytics Module
+Provides natural language AI Shopping Assistant parsing budget and keywords, 4-item side-by-side Product Comparison Matrix with AI Value Recommendation, Shop-by-Budget bundle generator, DualForge Trust Score (94/100), and Eco Impact Sustainability ratings.
+
+--------------------------------------------------------------------------------
+CHAPTER 7: IMPLEMENTATION
+--------------------------------------------------------------------------------
+
+7.1 Key Algorithms / Business Logic
+* AI Decision Assistant Intent & Budget Parser Algorithm: Extracts spending limits via regex and queries matching products within budget and category.
+* Smart Fit Recommendation Formula: Size_calc = f(Chest_cm, Height_cm) + Fit_preference.
+
+7.2 System Execution & Runtime Terminals
+* Fig 7.1 — Spring Boot Enterprise Backend Server Terminal (Port 8085)
+* Fig 7.2 — Vite React High-Speed Frontend Dev Server Terminal (Port 5173)
+* Fig 7.3 — DualForge Launcher Script Batch Execution Window (run_project.bat)
+* Fig 7.4 — VS Code IDE Workspace & Maven Wrapper Properties Config
+
+7.3 Code Snippets
+(AI Recommendation Engine ChatbotController.java and Variant Pre-Add Validation ProductDetails.jsx included)
+
+--------------------------------------------------------------------------------
+CHAPTER 8: TESTING
+--------------------------------------------------------------------------------
+
+8.1 Testing Strategy: Unit testing with JUnit 5 & Mockito, API endpoint verification, and manual UI integration testing.
+8.2 Test Execution Results: Fig 8.1 — Maven JUnit Test Suite Build Success (BUILD SUCCESS in 4.2s).
+8.3 Test Cases Matrix: 10 test cases executed with 100% PASS status.
+
+--------------------------------------------------------------------------------
+CHAPTER 9: OUTPUT SCREENS
+--------------------------------------------------------------------------------
+
+* Fig 9.1 — User Sign-In Interface (with 1-Click Demo Login Shortcuts)
+* Fig 9.2 — User Registration & Phone/Email OTP Interface
+* Fig 9.3 — Landing Page Hero Carousel displaying Fashion Extravaganza
+* Fig 9.4 — Interactive Shop Catalog Grid & Deals of the Day
+* Fig 9.5 — Product Details Page featuring DualForge Trust Score (94/100) Card
+* Fig 9.6 — Sustainability Eco Score (B+) & Technical Specifications Card
+* Fig 9.7 — Pre-Add Variant Selection Confirmation Modal
+* Fig 9.8 — Shopping Cart Page with Best Coupon (FLAGSHIP20) Banner
+* Fig 9.9 — Multi-Step Checkout Page with Applied Discount (₹25,499.60 Saved)
+* Fig 9.10 — 256-bit AES Encryption Security Payment Modal
+* Fig 9.11 — Wishlist Interface (Light Theme Mode)
+* Fig 9.12 — Wishlist Interface (Dark Theme Glassmorphism Mode)
+* Fig 9.13 — Real-Time Order History & Progress Timeline Tracker (Placed -> Shipped -> Delivered)
+* Fig 9.14 — Account Security Modal for Password Updates
+* Fig 9.15 — AI Shopping Decision Assistant Chatbot Recommendation
+
+--------------------------------------------------------------------------------
+CHAPTER 10: RESULTS AND DISCUSSION
+--------------------------------------------------------------------------------
+
+1. Architecture Resilience: Decoupled Spring Boot REST APIs and React SPA.
+2. Elimination of Variant Errors: Mandatory variant validation & smart size calculators.
+3. Automated AI Shopping Decisions: Natural language intent parsing and recommendation generation.
+4. Enhanced Buyer Confidence: Trust scores (94/100), eco scores, and comparison matrix.
+5. Robust Data Persistence: Hybrid database persistence (H2 + MongoDB).
+
+--------------------------------------------------------------------------------
+CHAPTER 11: CONCLUSION AND FUTURE SCOPE
+--------------------------------------------------------------------------------
+
+11.1 Conclusion: DualForge fulfills all capstone project requirements under the EWDP Java Full Stack program.
+11.2 Future Enhancements: Real payment gateway webhooks, live shipment GPS tracking, React Native mobile apps, and LLM API integrations.
+
+--------------------------------------------------------------------------------
+REFERENCES
+--------------------------------------------------------------------------------
+
+1. Spring Boot Documentation: https://spring.io/projects/spring-boot
+2. React Official Documentation: https://react.dev/
+3. Spring Security Architecture Guide: https://spring.io/projects/spring-security
+4. MongoDB Java Driver Manual: https://www.mongodb.com/docs/drivers/java/sync/current/
+5. Vite Build Tool Guide: https://vitejs.dev/
+6. JSON Web Token (JWT) RFC 7519 Specification: https://datatracker.ietf.org/doc/html/rfc7519
+
+--------------------------------------------------------------------------------
+APPENDIX: TEAM CONTRIBUTION
+--------------------------------------------------------------------------------
+
+Name              | Roll Number | Primary Role                | Key Contributions
+M. Madhu Teja     | 23691A3762  | Team Lead & Architecture    | Architecture, Security, Cart/Order, React, AI Chatbot, Size Calculator.
+K. Madhu          | 23691A3761  | Frontend Engineer           | Catalog UI, Glassmorphism CSS, Comparison Matrix, Product Cards.
+A. Hemanth Reddy  | 23691A3747  | Backend Developer           | REST Controllers, Product/Cart services, Maven build.
+V. Govardhan      | 23691A3738  | Database Engineer           | Relational JPA schema, H2 entity mapping, 60+ product seed data.
+B. Harsha Vardhan | 23691A3740  | Security Specialist         | Spring Security filter chain, BCrypt, OTP verification, RBAC.
+S. Harinath Reddy | 23691A3738  | QA & NoSQL Integration      | MongoDB reviews driver, JUnit 5 test cases, Mockito API validation.
+
+================================================================================
+End of Project Report — DualForge Enterprise E-Commerce Platform
+================================================================================
